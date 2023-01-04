@@ -86,7 +86,6 @@ func home(w http.ResponseWriter, r *http.Request) {
 			fmt.Println(err.Error())
 			return
 		}
-
 		each.Duration = period(each.start_date, each.end_date)
 		result = append(result, each)
 	}
